@@ -12,6 +12,6 @@ object luisa {
 }
 object juan {
 
-  method leGusta(algo) = algo.color().noEsFuerte() || (algo.peso() >= 1200 and algo.peso() <= 1800)
+  method leGusta(algo) = algo.color().noEsFuerte() || algo.peso().between(1200, 1800)
   
 }
